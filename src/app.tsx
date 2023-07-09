@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from './components/layout';
+import Notice from './pages/notice';
+import Home from './pages/home';
 
 const App: any = () => {
   return (
-    <Layout>
-      <div style={{ height: '120vh' }}>content</div>
+    <Layout notice={<Notice />}>
+      <Home />
     </Layout>
   )
 };
